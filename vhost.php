@@ -1,4 +1,7 @@
 <?php
+error_reporting(0);
+
+header('Access-Control-Allow-Origin: *');
 $host = $_GET['host'];
 
 if($host){

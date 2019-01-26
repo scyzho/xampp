@@ -29,13 +29,14 @@ document.getElementById('submitHost').onsubmit = function() {
     host = document.getElementById('host').value;
     server = "127.0.0.1"
     Http = new XMLHttpRequest();
-                            url = 'https://' + server + '/vhost.php?host=' + host + '';
+                            url = 'http://' + server + '/vhost.php?host=' + host + '';
                             Http.open("GET", url);
                             Http.send();
 
                             Http.onreadystatechange = (e) => {
                                 //console.log(Http.responseText.length);
                                 console.log("server response", Http.responseText);
+                                alert("successfully Added")
                             }
 
 
