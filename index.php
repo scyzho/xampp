@@ -36,7 +36,7 @@ document.getElementById('submitHost').onsubmit = function() {
                             Http.onreadystatechange = (e) => {
                                 //console.log(Http.responseText.length);
                                 console.log("server response", Http.responseText);
-                                alert("successfully Added")
+                                alert("successfully Added. Please restart your Apache")
                             }
 
 
